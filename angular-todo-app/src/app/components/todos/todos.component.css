@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.todo {
+	display: flex;
+    flex-direction: row;
+	padding: 10px 15px;
+	background-color: rgb(226, 226, 226);
+	border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+	background-color: rgb(201, 201, 201);
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+    cursor: pointer;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+}
+
+.todo-input {
+	display: block;
+    text-align: center;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: #F3F3F3;
+	margin-top: 15px;
+	font-size: 30px;
+	outline: none;
+}
+
+/* <!-- HTML !-->
+<button class="button-55" role="button">Button 55</button> */
+
+/* CSS */
+.button-55 {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: block;
+    /* font-family: Neucha, sans-serif; */
+    font-size: 1.5rem;
+    font-weight: 1000;
+    line-height: 23px;
+	margin: 15px auto;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-55:hover {
+    background-color: #ffee9b;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .button-55:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+  .button-55:disabled {
+    color: #777572;
+    background-color: #d8d8d8;
+    box-shadow: none;
+  }
+
+  .button-55:disabled:hover {
+    background-color: #d8d8d8;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .button-55:disabled:focus {
+    box-shadow: none;
+  }
+
+.todo-submit {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+
+	background-color: #fee048;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 1000;
+
+    cursor: pointer;
+
+
+    /* border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: yellow;
+    font-family: roboto;
+    font-size: 4rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+  
+.todo-submit::after {
+    background-color: yellow;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+    
+.todo-submit:hover::after{
+    transform: translate(0, 0)
+}
+    
+.todo-submit:hover{
+    border: 2px solid transparent;
+    color: indigo;
+    transform: scale(1.05);
+    will-change: transform; */
+}
+
+.duedate {
+    position: absolute;
+    padding: 5px;
+    margin: 10px;
+}
+
+.calendar-label {
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar {
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete {
+    background-color: rgb(172, 252, 225);
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+	font-size: 15px;
+	font-weight: 500;
+    transition: 0.5s;
+}
+
+.delete:after {
+    content: 'X';
+    position: absolute;
+    opacity: 0;
+    top: 5px;
+    right: -5px;
+    transition: 0.5s;
+}
+
+.delete:hover {
+    background-color: #ffee9b;;
+    padding-right: 24px;
+    padding-left:8px;
+    cursor: pointer;
+}
+
+.delete:hover:after {
+    opacity: 1;
+    right: 10px;
+}
