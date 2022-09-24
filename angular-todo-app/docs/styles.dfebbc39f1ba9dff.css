@@ -1,1 +1,13 @@
-@import"https://fonts.googleapis.com/css?family=Roboto:100";*{margin:0;padding:0;box-sizing:border-box;font-family:roboto;align-items:center;justify-content:center}
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: roboto;
+
+    align-items: center;
+    justify-content: center;
+}
